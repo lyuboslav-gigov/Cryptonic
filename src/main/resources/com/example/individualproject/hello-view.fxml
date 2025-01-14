@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="your.package.name.WelcomeController">
+    <children>
+        <Label layoutX="141.0" layoutY="101.0" text="Welcome to Encryption App" textAlignment="CENTER" textFill="#1976D2">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <HBox layoutX="230.0" layoutY="150.0" spacing="20.0">
+            <children>
+                <Button fx:id="encryptButton" mnemonicParsing="false" onAction="#openEncryptionWindow" text="Encrypt" />
+                <Button fx:id="decryptButton" mnemonicParsing="false" onAction="#openDecryptionWindow" text="Decrypt" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
